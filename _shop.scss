@@ -1,0 +1,15 @@
+.shop{
+    width: 100vw;
+    background-color: #FBFCFC;
+    .left{
+        order: 2;
+    }
+    .right{
+        order: 1;
+    }
+    &-img-container{
+        width: 35rem;
+        height: 35rem;
+        border-radius: 50%;
+    }
+}

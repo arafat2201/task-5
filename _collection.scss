@@ -1,0 +1,15 @@
+.collection{
+    .right{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &-img-container{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 2rem;
+        margin: 2rem;
+    }
+
+}

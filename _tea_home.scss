@@ -1,0 +1,10 @@
+.section-main{
+    display: flex;
+    padding-top: 20vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .img-container{
+        width: 35rem;
+        border-radius: 3rem;
+    }
+}

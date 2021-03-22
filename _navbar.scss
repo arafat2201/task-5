@@ -1,0 +1,46 @@
+header{
+    background-color: $nav-bar-color;
+    width: 100%;
+    padding: 0.2rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 1px #ECF0F1;
+    
+
+    .nav-logo{
+        color: $nav-bar-font;
+        font-size: 3rem;
+        padding: 1rem 0;
+        cursor:text;
+        &:hover{
+            color: $nav-bar-font-hover ;
+        }
+    }
+    .nav{
+        width: 30rem;
+        .nav-item-list{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            align-items: center;
+            &-item a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $nav-bar-font;
+                font-size: 1.6rem;
+                padding: 0.5rem;
+                border-bottom: 1px solid transparent;
+                border-radius: 0.2rem;
+                transition: all 100ms;
+            }
+            & a:hover{
+                color:  $nav-bar-font-hover ;
+                padding-bottom:1rem ;
+                border-bottom: 1px solid  $nav-bar-font-hover;
+                transition:all 0.3s 0.25s ;
+
+                }
+        }
+    }
+    
+}
