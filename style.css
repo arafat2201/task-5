@@ -200,9 +200,13 @@ section {
   font-size: 1.7rem;
   margin-top: 2rem;
   border-radius: 0.4rem;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
 }
 
 .btn:hover {
   background-color: rgba(52, 152, 219, 0.8);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
 }
 /*# sourceMappingURL=style.css.map */
