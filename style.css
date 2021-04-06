@@ -1,7 +1,7 @@
 header {
   background-color: #FDFEFE;
   width: 100%;
-  padding: 0.2rem;
+  padding: 0.3rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -57,6 +57,24 @@ header .nav .nav-item-list a:hover {
   transition: all 0.3s 0.25s;
 }
 
+@media screen and (max-width: 750px) {
+  header {
+    font-size: 8px;
+  }
+  header .empty {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .nav {
+    display: none;
+  }
+}
+
 .section-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,11 +85,136 @@ header .nav .nav-item-list a:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /*
+@media  screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4vh;
+        min-height: 70vh;
+        .left{
+            width: 80%;
+            word-spacing: 1px;
+            align-items: center;
+            .para{
+                margin-bottom: 2rem;
+                text-align: justify;
+            }
+            .btn{
+                align-self: center;
+            }
+
+        }
+        .right{
+            display: none;
+        }
+        
+    }
+    @media  screen and (max-width: 400px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3vh;
+        min-height: 80vh;
+        
+        
+        .left{
+            width: 80%;
+            word-spacing: 2px;
+            align-items: center;
+            h1{
+                font-size: 3.5rem;
+                border: 1px solid yellow;
+            }
+            .para{
+                //margin-bottom: 1rem;
+                border: 1px solid yellow;
+
+                text-align: justify;
+            }
+            .btn{
+                align-self: center;
+                margin-bottom: 1rem;
+            }
+
+        }
+        .right{
+            display: none;
+        }
+        
+    }
+    */
 }
 
 .section-main .img-container {
   width: 35rem;
   border-radius: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .section-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 5vh;
+    min-height: 65vh;
+  }
+  .section-main .left {
+    width: 80%;
+    word-spacing: 2px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-main .left .para {
+    margin-bottom: 2rem;
+  }
+  .section-main .right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .section-main {
+    min-height: 0;
+    min-height: 70vh;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .section-main {
+    min-height: 0;
+    min-height: 75vh;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .section-main {
+    min-height: 0;
+    min-height: 85vh;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .section-main {
+    min-height: 0;
+    min-height: 87vh;
+  }
+  .section-main .heading-1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .section-main {
+    min-height: 0;
+    min-height: 100vh;
+  }
+  .section-main .heading-1 {
+    font-size: 3.5rem;
+  }
 }
 
 .shop {
@@ -97,6 +240,65 @@ header .nav .nav-item-list a:hover {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 750px) {
+  .shop {
+    min-height: 0;
+    min-height: 70vh;
+  }
+  .shop .shop__empty {
+    width: 80%;
+    word-spacing: 2px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .shop .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: justify;
+  }
+  .shop .left .para {
+    margin-bottom: 2rem;
+  }
+  .shop .right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .shop {
+    min-height: 0;
+    min-height: 75vh;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .shop {
+    min-height: 0;
+    min-height: 75vh;
+  }
+}
+
+@media screen and (max-width: 474px) {
+  .shop {
+    min-height: 0;
+    min-height: 90vh;
+  }
+}
+
 .collection .right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,12 +320,38 @@ header .nav .nav-item-list a:hover {
   margin: 2rem;
 }
 
+@media screen and (max-width: 961px) {
+  .collection .right img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 661px) {
+  .collection .right img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
 footer {
-  min-height: 20vh;
+  min-height: 40vh;
   background-color: #222;
   padding: 1rem;
 }
 
+@media screen and (max-width: 750px) {
+  footer {
+    min-height: 0;
+    min-height: 60vh;
+  }
+}
+
+/*-----------------------------------------------------------*/
+/*----------------Desktop----------------------*/
+/*-----------------------------------------------------------*/
+/*----------------Tablet----------------------*/
+/*-----------------------------------------------------------*/
+/*----------------Mobile----------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -133,11 +361,12 @@ footer {
 
 html {
   font-size: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato',  Times, serif;
   color: #2C3E50;
 }
 
 .container {
+  max-width: 80%;
   max-width: 117rem;
   margin: 0 auto;
 }
@@ -165,6 +394,13 @@ section {
   min-height: 80vh;
   background-color: #ECF0F1;
   overflow: hidden;
+  width: 100vw;
+}
+
+@media screen and (max-width: 750px) {
+  section {
+    min-height: 0;
+  }
 }
 
 .left {

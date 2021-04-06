@@ -12,4 +12,22 @@
         margin: 2rem;
     }
 
+    @media screen and (max-width:961px) {
+        .right{
+            img{
+                width: 30%;
+            }
+        }
+        
+    }
+    @media screen and (max-width:661px) {
+        .right{
+            img{
+                width: 70%;
+                height: 70%;
+            }
+        }
+        
+    }
+
 }

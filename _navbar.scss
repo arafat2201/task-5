@@ -1,12 +1,10 @@
 header{
     background-color: $nav-bar-color;
     width: 100%;
-    padding: 0.2rem;
+    padding: 0.3rem;
     position: sticky;
     top: 0;
     box-shadow: 1px 1px 1px #ECF0F1;
-    
-
     .nav-logo{
         color: $nav-bar-font;
         font-size: 3rem;
@@ -41,6 +39,19 @@ header{
 
                 }
         }
+    } 
+    @media  screen and (max-width: 750px) {
+        //display: inline-block;
+        font-size: 8px;
+        .empty{
+           justify-content: center;
+           flex-direction: column;
+            
+        }
+        .nav{
+            display: none;
+        }
+       
     }
     
 }

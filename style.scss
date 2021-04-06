@@ -4,6 +4,7 @@
 @import './shop';
 @import './collection';
 @import './footer';
+@import './media_quory';
 
 *{
     margin: 0;
@@ -12,10 +13,11 @@
 }
 html{
     font-size: 10px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato',  Times, serif;
     color: $global-font-color;
 }
 .container{
+    max-width: 80%;
     max-width: 117rem;
     margin: 0 auto;
 }
@@ -39,6 +41,11 @@ section{
     min-height: 80vh;
     background-color: #ECF0F1 ;
     overflow: hidden;
+    width: 100vw;
+    @media screen and (max-width: 750px) {
+       min-height: 0;
+        
+    }
 }
 .left{
     flex-basis: 50%;
@@ -71,8 +78,5 @@ section{
     &:hover{
     background-color: rgba(52, 152, 219,.8) ;
     transition: all 0.3s 0.2s;
-
-
-
     }
 }
