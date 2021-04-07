@@ -7,6 +7,11 @@
         width: 35rem;
         border-radius: 3rem;
     }
+    .left{
+        .btn{
+            margin-bottom: 1rem;
+        }
+    }
 
     @media  screen and (max-width: 750px) {
         flex-direction: column;
@@ -44,29 +49,20 @@
     @media screen and (max-width: 404px) {
         min-height: 0;
         min-height: 87vh;
-        .heading-1{
-            font-size: 3.7rem;
-            
-        }
+        
 
         
     }
     @media screen and (max-width: 384px) {
         min-height: 0;
         min-height: 100vh;
-        .heading-1{
-            font-size: 3.5rem;
-            
-        }
+        
         
     }
     @media screen and (max-width: 384px) {
         min-height: 0;
         min-height: 100vh;
-        .heading-1{
-            font-size: 3.5rem;
-            
-        }
+        
         
     }
 

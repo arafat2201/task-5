@@ -13,6 +13,15 @@ header{
         &:hover{
             color: $nav-bar-font-hover ;
         }
+        @media screen and (max-width: 550px) {
+            font-size: 2.85rem;
+            padding: .85rem 0;
+            
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 2.5rem;
+            padding: .55rem 0;
+        }
     }
     .nav{
         width: 30rem;
@@ -39,7 +48,98 @@ header{
 
                 }
         }
-    } 
+        @media screen and (max-width: 750px) {
+            display: none;
+            
+        }
+    }
+    .responsive__nav{
+        display: none;
+        @media screen and (max-width:750px) {
+            display: block;
+            top: 50%;
+            left: 5%;
+            position: absolute;
+            transform-origin: top;
+            transition: transform 400ms ease-in-out;
+            margin-bottom: 2rem;
+        .res_navbar{
+            
+            
+            background-color: $res-navbar;
+            transform: scale(1,0);
+
+            &-item-list{
+                list-style: none;
+
+                &-item{
+
+                    margin: 0 1rem 1rem 2rem;
+                    a{
+                        color: white;
+                        font-size: 2rem;
+                        text-align: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        margin: 1rem 2rem 1rem 2rem;
+                        opacity: 0;
+                    }
+                
+                }
+            }
+           
+        }
+        .nav-toggle:checked ~ nav{
+            display: block;
+            transform: scale(1,1);
+
+        }
+        .nav-toggle-table{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            
+        }
+        .nav-toggle-table span,
+        .nav-toggle-table span::before,
+        .nav-toggle-table span::after{
+            display: block;
+            background-color: #000;
+            height: 2px;
+            width: 2rem;
+            border-radius: 2px;
+            position: relative;
+        }
+        .nav-toggle-table span::before,
+        .nav-toggle-table span::after{
+            content: "";
+            position: absolute;
+        }
+        .nav-toggle-table span::before{
+            bottom: 7px;
+        }
+        .nav-toggle-table span::after{
+            top: 7px;
+        }
+        .nav-toggle{
+            display: none;
+        }
+        .nav-toggle:checked ~ nav a{
+            opacity: 1;
+            transition: opacity 250ms ease-in-out 250ms;
+        }
+
+        
+        .nav-toggle:checked ~ .nav-toggle-table span::after
+        {
+            transform: rotate(20deg) ;
+        }
+        .nav-toggle:checked ~ .nav-toggle-table span::before{
+            transform: rotate(-20deg);
+            
+        }    
+        }
+    }
     @media  screen and (max-width: 750px) {
         //display: inline-block;
         font-size: 8px;
@@ -47,11 +147,7 @@ header{
            justify-content: center;
            flex-direction: column;
             
-        }
-        .nav{
-            display: none;
-        }
-       
+        } 
     }
     
 }
